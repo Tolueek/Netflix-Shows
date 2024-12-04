@@ -1,0 +1,39 @@
+#Change name
+import os
+
+
+#Read file into dataframe
+import pandas as pd
+df = pd.read_csv('Netflix_shows_movies.csv')
+
+#columns with missing values
+print(df.isnull().sum())
+#Missing Value
+df.fillna({'titlee': 'default_value'}, inplace=True)
+#Data description
+print(df.describe())
+print(df.info())
+#Libraries
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+#Bar chart
+print(df['title'].value_counts())
+print(df.corr())
+#Histogram
+title_counts = df['title'].value_counts()
+sns.barplot(x=genre_counts.index, y=genre_counts.values)
+plt.title('Most Watched title')
+plt.xlabel('title')
+plt.ylabel('Count')
+plt.show()
+
+#cleaned data
+df.to_csv('cleaned_data.csv', index=False)
+
+library(ggplot2)
+
+data <- read.csv('cleaned_data.csv')
+ggplot(data, aes(x = rating))
+geom_histogram(binwidth = 0.5, fill = "blue", color = "black") 
+labs(title = "Ratings Distribution", x = "Rating", y = "Frequency")

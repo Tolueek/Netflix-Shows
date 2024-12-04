@@ -1,0 +1,23 @@
+
+This project involves analyzing a Netflix dataset to extract meaningful insights through data preparation, cleaning, exploration, and visualization using Python and R. 
+
+Prerequisites
+
+Python:
+Libraries: pandas, numpy, seaborn, matplotlib, scipy
+
+R:
+Libraries: ggplot2
+
+Dataset:
+The dataset file, named cleaned_netflix_data.csv, available in the project directory.
+
+Project Structure
+
+The repository or project folder contains the following files:
+
+cleaned_netflix_data.csv: Dataset used for analysis.
+analysis.ipynb: Python script for data preparation, cleaning, exploration, and visualization.
+
+visualization.R: R script for generating visualizations.
+
